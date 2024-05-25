@@ -52,9 +52,9 @@ def predict_fall(filename):
 # def index():
 #     return render_template('home.html')
 
-@app.route('/harsh')
+@app.route('/ayush')
 def harsh():
-    return render_template('harsh.html')
+    return render_template('ayush.html')
 
 @app.route('/')
 def upload():
