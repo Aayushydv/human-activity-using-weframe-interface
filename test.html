@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall Detection System</title>
+    <style>
+        body {
+            background-image: url('https://www.assistance-retraite.net/blog/wp-content/uploads/2019/09/Depositphotos_232747310_s-2019.jpg'); /* URL of your background image */
+            background-size: cover; /* Cover the entire viewport */
+            /* background-size: 50%; s */
+            background-position: top ; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            margin: -110;
+            padding: -10;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 250px auto;
+            padding: 20px;
+            /* border: 1px solid #ccc; */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(99, 160, 97, 0.8); /* White background with transparency */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fall Detection System</h1>
+        <p>Upload an ECG file for fall detection:</p>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file">Choose File</label>
+            <input type="file" id="file" name="file">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
